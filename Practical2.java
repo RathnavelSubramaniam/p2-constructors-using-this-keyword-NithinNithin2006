@@ -1,5 +1,4 @@
 class Product {
-    // Define instance variables: productId (int), productName (String), price (double)
     int productId;
     String productName;
     double price;
@@ -41,15 +40,12 @@ public class Practical2 {
         Product product3 = new Product(303, "Tablet", 299.50);
 
         // Display product information
-        System.out.println("Product 1 Information:");
+        System.out.println("Practical2");
         product1.displayProductInfo();
         System.out.println();
-
-        System.out.println("Product 2 Information:");
         product2.displayProductInfo();
         System.out.println();
 
-        System.out.println("Product 3 Information:");
         product3.displayProductInfo();
         System.out.println();
 
@@ -60,12 +56,9 @@ public class Practical2 {
         System.out.println();
 
         // Create a new Product object and calculate and display the discounted price
-        Product product4 = new Product(404, "Desktop", 799.99);
-        discountedPrice = product4.calculateDiscountedPrice(discountPercentage);
-        System.out.println("Discounted Price of Product 4 with " + discountPercentage + "% discount: $" + discountedPrice);
+        discountedPrice = product3.calculateDiscountedPrice(discountPercentage);
         System.out.println();
-
-        // Display total product count
+       // Display total product count
         System.out.println("Total Product Count: " + Product.getTotalProductCount());
     }
 }
